@@ -73,6 +73,7 @@
           const { data:res } = await this.$http.post("login", this.loginForm);
           if(res.meta.status !== 200) return this.$message.error('登陆失败');
           this.$message.success('登陆成功');
+          console.log(res);
           // 登陆成功报错token值
           window.sessionStorage.setItem('token',res.data.token);
           this.$router.push('/home');
