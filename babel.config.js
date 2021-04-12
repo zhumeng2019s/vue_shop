@@ -18,6 +18,7 @@ module.exports = {
       }
     ],
     // ...展开运算符  发布产品用到的数组
-    ...prodPlugins
+    ...prodPlugins,
+    '@babel/plugin-syntax-dynamic-import'
   ]
 }
